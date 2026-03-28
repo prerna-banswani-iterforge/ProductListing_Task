@@ -1,0 +1,67 @@
+{
+  "products": [
+    { "id": 1, "name": "T-Shirt", "price": 499, "imageUrl": "https://picsum.photos/200?random=1", "parentCategoryId": "clothing" },
+    { "id": 2, "name": "Jeans", "price": 999, "imageUrl": "https://picsum.photos/200?random=2", "parentCategoryId": "clothing" },
+    { "id": 3, "name": "Sneakers", "price": 1999, "imageUrl": "https://picsum.photos/200?random=3", "parentCategoryId": "footwear" },
+    { "id": 4, "name": "Sandals", "price": 799, "imageUrl": "https://picsum.photos/200?random=4", "parentCategoryId": "footwear" },
+    { "id": 5, "name": "Headphones", "price": 1499, "imageUrl": "https://picsum.photos/200?random=5", "parentCategoryId": "electronics" },
+    { "id": 6, "name": "Keyboard", "price": 899, "imageUrl": "https://picsum.photos/200?random=6", "parentCategoryId": "electronics" },
+    { "id": 7, "name": "Watch", "price": 1299, "imageUrl": "https://picsum.photos/200?random=7", "parentCategoryId": "accessories" },
+    { "id": 8, "name": "Backpack", "price": 1099, "imageUrl": "https://picsum.photos/200?random=8", "parentCategoryId": "accessories" },
+    { "id": 9, "name": "Digital-watch", "price": 1499, "imageUrl": "https://picsum.photos/200?random=9", "parentCategoryId": "accessories" },
+    { "id": 10, "name": "Shirts", "price": 1599, "imageUrl": "https://picsum.photos/200?random=10", "parentCategoryId": "Clothing" }
+    
+  ],
+  "categories": [
+    { "id": "clothing", "name": "Clothing" },
+    { "id": "footwear", "name": "Footwear" },
+    { "id": "electronics", "name": "Electronics" },
+    { "id": "accessories", "name": "Accessories" }
+  ],
+  "cart": [
+    {
+      "productId": 1,
+      "quantity": 2
+    },
+    {
+      "productId": 3,
+      "quantity": 11
+    }
+  ],
+  "wishlist": [
+    {
+        "wishlistId": 1,
+        "wishlistName": "My Wishlist1",
+        "products": [
+          {
+            "productId": 3,
+            "name": "Product C",
+            "price": 19.99,
+            "imageUrl": "image3.jpg",
+            "parentCategoryId": "category1"
+          },
+          {
+            "productId": 1,
+            "name": "Product A",
+            "price": 29.99,
+            "imageUrl": "image1.jpg",
+            "parentCategoryId": "category1"
+          }
+        ]
+    },
+    {
+      "wishlistId": 2,
+      "wishlistName": "My Wishlist2",
+      "products": [
+        {
+          "productId": 1,
+          "name": "Product A",
+          "price": 29.99,
+          "imageUrl": "image1.jpg",
+          "parentCategoryId": "category1"
+
+        }
+      ]
+    }
+  ]
+}
