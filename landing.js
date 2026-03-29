@@ -90,14 +90,3 @@ loadCategories();
 loadProducts();
 
 
-categoryContainer.addEventListener("click", (e)=>{
-    console.log("Listening");
-
-    document.querySelectorAll(".category-pill").forEach(pill => pill.classList.remove("active"));
-
-    e.target.classList.add("active");
-    const categoryId = e.target.dataset.id;
-    console.log(categoryId);
-    loadProducts(categoryId);
-    alert("Category Clicked");
-});
