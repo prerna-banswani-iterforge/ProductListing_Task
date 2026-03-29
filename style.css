@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.search-box input {
+  width: 320px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.header-actions a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.cart-btn {
+  position: relative;
+}
+
+#cartCount {
+  background: #ff4d4f;
+  color: white;
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.category-section {
+  padding: 25px 40px;
+}
+
+.category-filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.category-pill {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.category-pill:hover {
+  background: #ddd;
+}
+
+.category-pill.active {
+  background: black;
+  color: white;
+}
+
+.product-card {
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  border: 1px solid #eee;
+  transition: 0.25s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.product-img {
+  background: #f3f4f6;
+  border-radius: 12px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img img {
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.product-name {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.product-price {
+  color: #666;
+  margin: 6px 0;
+}
+
+.product-grid {
+  padding: 0 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.atc {
+  background: black;
+  color: white;
+}
+
+.atw {
+  background: #f1f1f1;
+}
+
+.atc:hover {
+  background: #222;
+}
+
+.atw:hover {
+  background: #e3e3e3;
+}
