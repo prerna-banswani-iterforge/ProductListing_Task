@@ -90,6 +90,15 @@ loadCategories();
 loadProducts();
 
 
+
+
+
+
+
+
+
+
+
 categoryContainer.addEventListener("click", (e)=>{
     console.log("Listening");
 
