@@ -98,6 +98,18 @@ loadProducts();
 // Add To Cart Functionality
 
  
+categoryContainer.addEventListener("click", (e)=>{
+    console.log("Listening");
+
+    document.querySelectorAll(".category-pill").forEach(pill => pill.classList.remove("active"));
+
+    e.target.classList.add("active");
+    const categoryId = e.target.dataset.id;
+    console.log(categoryId);
+    loadProducts(categoryId);
+    alert("Category Clicked");
+});
+
 // Function to get all cart items from server
 async function getCartItems() {
     const res = await fetch(CART_URL);
