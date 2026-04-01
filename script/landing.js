@@ -65,7 +65,7 @@ function renderProducts(products){
         </div>
         
         <div class="product-name"> ${product.name}</div>
-        <div class="product-price">rs.${product.price}</div>
+        <div class="product-price">₹${product.price}</div>
 
         <div class="card-actions">
         <button class="btn atc" data-id=${product.id}>Add To Cart</button>
@@ -96,19 +96,7 @@ loadProducts();
 
 
 // Add To Cart Functionality
-
  
-categoryContainer.addEventListener("click", (e)=>{
-    console.log("Listening");
-
-    document.querySelectorAll(".category-pill").forEach(pill => pill.classList.remove("active"));
-
-    e.target.classList.add("active");
-    const categoryId = e.target.dataset.id;
-    console.log(categoryId);
-    loadProducts(categoryId);
-    alert("Category Clicked");
-});
 
 // Function to get all cart items from server
 async function getCartItems() {
