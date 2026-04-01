@@ -89,38 +89,56 @@
       "name": "Accessories"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "productId": 3,
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "productId": 4,
+      "quantity": 2,
+      "id": 2
+    }
+  ],
   "wishlist": [
     {
-      "wishlistId": 1,
+      "id": 1,
       "wishlistName": "My Wishlist1",
       "products": [
         {
-          "productId": 3,
-          "name": "Product C",
-          "price": 19.99,
-          "imageUrl": "image3.jpg",
-          "parentCategoryId": "category1"
+          "id": 4,
+          "name": "Sandals",
+          "price": 799,
+          "imageUrl": "https://picsum.photos/200?random=4",
+          "parentCategoryId": "footwear"
         },
         {
-          "productId": 1,
-          "name": "Product A",
-          "price": 29.99,
-          "imageUrl": "image1.jpg",
-          "parentCategoryId": "category1"
+          "id": 6,
+          "name": "Keyboard",
+          "price": 899,
+          "imageUrl": "https://picsum.photos/200?random=6",
+          "parentCategoryId": "electronics"
         }
       ]
     },
     {
-      "wishlistId": 2,
+      "id": 2,
       "wishlistName": "My Wishlist2",
       "products": [
         {
-          "productId": 1,
+          "id": 1,
           "name": "Product A",
           "price": 29.99,
           "imageUrl": "image1.jpg",
           "parentCategoryId": "category1"
+        },
+        {
+          "id": 8,
+          "name": "Backpack",
+          "price": 1099,
+          "imageUrl": "https://picsum.photos/200?random=8",
+          "parentCategoryId": "accessories"
         }
       ]
     }

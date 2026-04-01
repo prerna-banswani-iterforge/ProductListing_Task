@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wishlists - ShopEasy</title>
+    <link rel="stylesheet" href="style/wishlist.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h2 class="logo">ShopEasy</h2>
+
+        <div class="header-actions">
+            <a href="index.html">← Back to Products</a>
+            <!-- <a href="cart.html" class="cart-btn">
+                Cart
+                <span id="cartCount">0</span>
+            </a> -->
+        </div>
+    </header>
+
+    <!-- Main Wishlist Section -->
+    <main class="wishlist-main">
+        <div class="wishlist-container">
+
+            <h1 class="page-title">My Wishlists</h1>
+
+            <!-- Wishlist Tabs -->
+            <div class="wishlist-tabs" id="wishlistTabs">
+                <!-- <button class="wishlist-tab active" data-wishlist-id="1">Default Wishlist</button>
+        <button class="wishlist-tab" data-wishlist-id="2">Christmas Gifts</button>
+        <button class="wishlist-tab" data-wishlist-id="3">Birthday Ideas</button> -->
+
+            </div>
+
+            <!-- Selected Wishlist Content -->
+            <div id="wishlistContent" class="wishlist-content">
+
+                <!-- Wishlist Header -->
+                <div class="wishlist-header">
+                    <h2 id="currentWishlistName">Default Wishlist</h2>
+                    <button class="btn-delete-wishlist" id="deleteWishlistBtn">
+                        Delete Wishlist
+                    </button>
+                </div>
+
+                <!-- Products Grid -->
+                <div id="wishlistProductsGrid" class="wishlist-products-grid">
+                    <!-- <div class="wishlist-product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/200?random=1" alt="T-Shirt">
+                        </div>
+                        <h3 class="product-name">T-Shirt</h3>
+                        <p class="product-price">₹499</p>
+                        <button class="btn-remove" data-product-id="1">Remove</button>
+                    </div> -->
+                </div>
+
+                <!-- Empty Wishlist Message -->
+                <div id="emptyWishlistMessage" class="empty-wishlist" style="display: none;">
+                    <h3>This wishlist is empty</h3>
+                    <p>Start adding products!</p>
+                    <a href="index.html" class="btn-browse">Browse Products</a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script/wishlist.js"></script>
+
+</body>
+
+</html>
