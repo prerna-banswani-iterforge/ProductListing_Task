@@ -29,8 +29,8 @@ async function getCartItems() {
         const cartItems = await response.json();
         return cartItems;
     } 
-    catch (err) {
-        console.err('Error fetching cart items:', err);
+    catch (error) {
+        console.error('Error fetching cart items:', error);
         return [];
     }
 }
@@ -50,8 +50,8 @@ async function getProductById(productId) {
         console.log("Products fetched with product id", product);
         return product;
     } 
-    catch (err) {
-        console.err(`Error fetching product ${productId}:`, err);
+    catch (error) {
+        console.error(`Error fetching product ${productId}:`, error);
         return null;
     }
 }
