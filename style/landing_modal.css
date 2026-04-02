@@ -1,0 +1,135 @@
+/* Modal Overlay */
+.modal-overlay {
+  display: none; 
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show modal when active */
+.modal-overlay.active {
+  display: flex;
+}
+
+/* Modal Content Box */
+.modal-content {
+  background: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #666;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-btn:hover {
+  color: #000;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 20px;
+}
+
+/* Wishlist Selection */
+.wishlist-selection label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Dropdown Styling */
+.wishlist-dropdown {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.wishlist-dropdown:hover {
+  border-color: #999;
+}
+
+.wishlist-dropdown:focus {
+  border-color: #333;
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.btn-cancel,
+.btn-add-to-wishlist {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-add-to-wishlist {
+  background-color: #000;
+  color: white;
+}
+
+.btn-add-to-wishlist:hover {
+  background-color: #333;
+}

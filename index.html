@@ -6,6 +6,7 @@
   <title>Product Listing</title>
 
   <link rel="stylesheet" href="style/landing.css">
+  <link rel="stylesheet" href="style/landing_modal.css">
 </head
 
 <body>
@@ -48,6 +49,52 @@
 <main>
   <div id="productContainer" class="product-grid"></div>
 </main>
+
+<!-- Modal Section -->
+
+<div id="wishlistModal" class="modal-overlay">
+  <div class="modal-content">
+    
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h3>Add to Wishlist</h3>
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="modal-body">
+      
+      <!-- Wishlist Dropdown Selection -->
+      <div class="wishlist-selection">
+        <label for="wishlistDropdown">Select Wishlist</label>
+        
+        <select id="wishlistDropdown" class="wishlist-dropdown">
+          <!-- <option value="">Choose a wishlist...</option>
+          <option value="1">Default Wishlist</option>
+          <option value="2">Christmas Gifts</option>
+          <option value="3">Birthday Ideas</option> -->
+          
+          <option value="new">+ Create New Wishlist</option>
+        </select>
+
+        <!-- <div id="newWishlistInput" class="new-wishlist-input" style="display: none;">
+          <input 
+            type="text" 
+            id="newWishlistName" 
+            placeholder="Enter wishlist name..."
+          >
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Modal Footer -->
+    <div class="modal-footer">
+      <button class="btn-cancel" id="cancelModalBtn">Cancel</button>
+      <button class="btn-add-to-wishlist" id="addToWishlistBtn">Add to Wishlist</button>
+    </div>
+
+  </div>
+</div>
 
 
 <script src="script/landing.js"></script>
